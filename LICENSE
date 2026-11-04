@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This license covers original project code, project-created weights and
-project-generated experimental results. Third-party reference checkpoints
-retain CC BY 4.0; see experiments/v3/ATTRIBUTION.txt and the accompanying
-LICENSE-reference.txt. MinAtar is an external GPL-3.0 dependency.

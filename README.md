@@ -135,6 +135,8 @@ V3 的计算链为：
 自有代码、构造的权重和自行生成的实验结果采用 [MIT License](LICENSE)。
 第三方 `reference-hand.npz` 保留 **CC BY 4.0**，作者、来源和哈希见 [署名说明](experiments/v3/ATTRIBUTION.txt)；MinAtar 是独立安装的 **GPL-3.0** 依赖，不打包进本仓库。原研究公开权重没有被修改，也没有用于初始化我们的模型。
 
+许可范围另见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+
 - [原研究博客](https://rikiyat.github.io/blog/weight-space-programming/)
 - [原研究日志与 checkpoint](https://github.com/RikiyaT/lm_understand-logs)
 - [MinAtar 官方仓库](https://github.com/kenjyoung/MinAtar)
