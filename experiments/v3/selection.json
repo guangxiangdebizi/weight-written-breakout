@@ -1,0 +1,61 @@
+{
+  "reference_reproduction": {
+    "reported_mean": 517.411,
+    "reproduced_mean": 508.268,
+    "acceptance_threshold": 32.04471119874247,
+    "passed": true
+  },
+  "candidates": [
+    {
+      "model": "recurrent-0.01.npz",
+      "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+      "mean": 674.3671875,
+      "se": 19.786961673048932,
+      "config": {
+        "first_seed": 2000,
+        "episodes": 128,
+        "sticky": 0.1,
+        "cap": 10000
+      }
+    },
+    {
+      "model": "recurrent-0.05.npz",
+      "sha256": "b260cf2b11d9cb273cb015a8ecd300cee9982168d37ab93ec8c18f857e8fc40f",
+      "mean": 628.421875,
+      "se": 24.769529719624735,
+      "config": {
+        "first_seed": 2000,
+        "episodes": 128,
+        "sticky": 0.1,
+        "cap": 10000
+      }
+    },
+    {
+      "model": "recurrent-0.2.npz",
+      "sha256": "52aeb1936f9b318a06a01702b0b90c219772d1ff22a292bd97b0de8459d78f35",
+      "mean": 579.3203125,
+      "se": 25.989350705580474,
+      "config": {
+        "first_seed": 2000,
+        "episodes": 128,
+        "sticky": 0.1,
+        "cap": 10000
+      }
+    }
+  ],
+  "chosen": {
+    "model": "recurrent-0.01.npz",
+    "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+    "mean": 674.3671875,
+    "se": 19.786961673048932,
+    "config": {
+      "first_seed": 2000,
+      "episodes": 128,
+      "sticky": 0.1,
+      "cap": 10000
+    }
+  },
+  "heldout_seen": false,
+  "training_steps": 0,
+  "development_feedback_used": true
+}

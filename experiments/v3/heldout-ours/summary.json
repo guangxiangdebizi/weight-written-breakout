@@ -1,0 +1,22 @@
+{
+  "kind": "compiled_fast",
+  "model": "recurrent-0.01.npz",
+  "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+  "config": {
+    "first_seed": 200000,
+    "episodes": 1000,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "mean": 672.681,
+  "se": 6.989976753467355,
+  "ci95": [
+    658.322475,
+    687.535175
+  ],
+  "median": 764.0,
+  "min": 7,
+  "max": 839,
+  "mean_steps": 8710.644,
+  "truncated": 784
+}

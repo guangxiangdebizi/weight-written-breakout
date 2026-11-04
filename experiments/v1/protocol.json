@@ -1,0 +1,55 @@
+{
+  "experiment": "weight-written-breakout-v1",
+  "frozen_before_first_game": true,
+  "environment": "kenjyoung/MinAtar",
+  "upstream_commit": "4241f24685622cfb52f843cab9bbcf385a53484a",
+  "task": "breakout",
+  "observation": "official 10x10x4 binary object channels, flattened without extra features",
+  "network": "400 -> 794 ReLU -> 3 linear logits; sparse handwritten weights",
+  "construction": "local ball/trail conjunctions; analytic side-wall reflection to row 8; paddle comparison",
+  "forbidden": [
+    "training",
+    "gradient updates",
+    "fitting to trajectories",
+    "test-result-driven weight changes",
+    "hidden environment state in policy"
+  ],
+  "policies": [
+    "anticipation",
+    "reactive",
+    "random",
+    "zero"
+  ],
+  "primary": {
+    "seeds": [
+      0,
+      999
+    ],
+    "episodes": 1000,
+    "sticky_action_prob": 0.1,
+    "max_steps": 10000
+  },
+  "stress": {
+    "seeds": [
+      10000,
+      10199
+    ],
+    "episodes": 200,
+    "sticky_action_prob": 0.25,
+    "max_steps": 10000
+  },
+  "metrics": [
+    "mean reward",
+    "median reward",
+    "bootstrap mean 95% CI",
+    "mean episode length",
+    "truncation count",
+    "paired reward difference"
+  ],
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261104
+  },
+  "display": "first primary seed, first 600 frames; never select best episode",
+  "interpretation": "task-specific constructed neural policy, not a trained visual encoder or general-purpose AI; no trained-PPO superiority claim"
+}

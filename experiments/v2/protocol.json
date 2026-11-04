@@ -1,0 +1,33 @@
+{
+  "name": "weight-written-breakout-v2-full-flight",
+  "development": {
+    "first_seed": 2000,
+    "episodes": 128,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "heldout": {
+    "first_seed": 30000,
+    "episodes": 1000,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "stress": {
+    "first_seed": 50000,
+    "episodes": 200,
+    "sticky": 0.25,
+    "cap": 10000
+  },
+  "candidates": [
+    "center_old",
+    "center_interval",
+    "brick_old",
+    "brick_interval",
+    "extended_old",
+    "extended_safe"
+  ],
+  "reason": "Brick interval survives longer but often retraces empty paths; brick old wastes early prediction by returning to center within upper rows. Extend prediction across those rows, prefer old-x contact for non-retracing bounces, and optionally accept the full safe interval only at the final catch step.",
+  "selection": "highest mean reward across the same 128 development seeds; break ties in candidate order",
+  "constraint": "unchanged 400-794-3 architecture, raw observations, no gradients or fitted weights",
+  "information_boundary": "development inspected; heldout and stress unseen"
+}

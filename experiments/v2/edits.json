@@ -1,0 +1,32 @@
+{
+  "architecture": [
+    400,
+    794,
+    3
+  ],
+  "baseline_sha256": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+  "edits": {
+    "center_old": {
+      "sha256": "bba075bcd7a6aa2f2ed0c2647566189ced8ee0c7d227f4dbfd38c7c6cc2d705d",
+      "changed": {
+        "w1": 0,
+        "b1": 0,
+        "w2": 1224,
+        "b2": 1,
+        "actions": 0
+      },
+      "nonzero_parameters": 3909
+    },
+    "center_interval": {
+      "sha256": "41d528f10e54ad2c59eca3b01540aa3d8eea70cf09ca59c03b1bce75293b9dcf",
+      "changed": {
+        "w1": 0,
+        "b1": 0,
+        "w2": 1492,
+        "b2": 1,
+        "actions": 0
+      },
+      "nonzero_parameters": 3927
+    }
+  }
+}

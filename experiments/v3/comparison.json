@@ -1,0 +1,192 @@
+{
+  "selection": {
+    "reference_reproduction": {
+      "reported_mean": 517.411,
+      "reproduced_mean": 508.268,
+      "acceptance_threshold": 32.04471119874247,
+      "passed": true
+    },
+    "candidates": [
+      {
+        "model": "recurrent-0.01.npz",
+        "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+        "mean": 674.3671875,
+        "se": 19.786961673048932,
+        "config": {
+          "first_seed": 2000,
+          "episodes": 128,
+          "sticky": 0.1,
+          "cap": 10000
+        }
+      },
+      {
+        "model": "recurrent-0.05.npz",
+        "sha256": "b260cf2b11d9cb273cb015a8ecd300cee9982168d37ab93ec8c18f857e8fc40f",
+        "mean": 628.421875,
+        "se": 24.769529719624735,
+        "config": {
+          "first_seed": 2000,
+          "episodes": 128,
+          "sticky": 0.1,
+          "cap": 10000
+        }
+      },
+      {
+        "model": "recurrent-0.2.npz",
+        "sha256": "52aeb1936f9b318a06a01702b0b90c219772d1ff22a292bd97b0de8459d78f35",
+        "mean": 579.3203125,
+        "se": 25.989350705580474,
+        "config": {
+          "first_seed": 2000,
+          "episodes": 128,
+          "sticky": 0.1,
+          "cap": 10000
+        }
+      }
+    ],
+    "chosen": {
+      "model": "recurrent-0.01.npz",
+      "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+      "mean": 674.3671875,
+      "se": 19.786961673048932,
+      "config": {
+        "first_seed": 2000,
+        "episodes": 128,
+        "sticky": 0.1,
+        "cap": 10000
+      }
+    },
+    "heldout_seen": false,
+    "training_steps": 0,
+    "development_feedback_used": true
+  },
+  "architecture": {
+    "sizes": [
+      612,
+      1150,
+      400,
+      10092,
+      18
+    ],
+    "trajectory_features": 1112,
+    "forecast_classes": 360,
+    "context_classes": 28,
+    "nonzero_parameters": 48202,
+    "dense_parameter_slots": 5393916,
+    "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+    "penalty": 0.01
+  },
+  "heldout": {
+    "models": {
+      "ours": {
+        "kind": "compiled_fast",
+        "model": "recurrent-0.01.npz",
+        "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+        "config": {
+          "first_seed": 200000,
+          "episodes": 1000,
+          "sticky": 0.1,
+          "cap": 10000
+        },
+        "mean": 672.681,
+        "se": 6.989976753467355,
+        "ci95": [
+          658.322475,
+          687.535175
+        ],
+        "median": 764.0,
+        "min": 7,
+        "max": 839,
+        "mean_steps": 8710.644,
+        "truncated": 784
+      },
+      "reference": {
+        "kind": "reference",
+        "model": "hand.npz",
+        "sha256": "6e8d42658aed3704c7bf6fb67015e9468cc03f1d67cb8a4fd192e6534fcccb4a",
+        "config": {
+          "first_seed": 200000,
+          "episodes": 1000,
+          "sticky": 0.1,
+          "cap": 10000
+        },
+        "mean": 512.86,
+        "se": 7.652293904575411,
+        "ci95": [
+          497.9428,
+          527.69515
+        ],
+        "median": 647.5,
+        "min": 3,
+        "max": 812,
+        "mean_steps": 7314.134,
+        "truncated": 517
+      }
+    },
+    "paired_mean_difference": 159.821,
+    "paired_ci95": [
+      142.27095,
+      178.18342499999997
+    ],
+    "ratio": 1.3116269547244863
+  },
+  "stress": {
+    "models": {
+      "ours": {
+        "kind": "compiled_fast",
+        "model": "recurrent-0.01.npz",
+        "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+        "config": {
+          "first_seed": 300000,
+          "episodes": 200,
+          "sticky": 0.25,
+          "cap": 10000
+        },
+        "mean": 163.99,
+        "se": 11.259131391830032,
+        "ci95": [
+          141.990375,
+          186.094
+        ],
+        "median": 121.5,
+        "min": 0,
+        "max": 692,
+        "mean_steps": 2478.5,
+        "truncated": 5
+      },
+      "reference": {
+        "kind": "reference",
+        "model": "reference-hand.npz",
+        "sha256": "6e8d42658aed3704c7bf6fb67015e9468cc03f1d67cb8a4fd192e6534fcccb4a",
+        "config": {
+          "first_seed": 300000,
+          "episodes": 200,
+          "sticky": 0.25,
+          "cap": 10000
+        },
+        "mean": 75.005,
+        "se": 5.725981066232604,
+        "ci95": [
+          63.98075,
+          86.685875
+        ],
+        "median": 48.0,
+        "min": 0,
+        "max": 430,
+        "mean_steps": 1159.75,
+        "truncated": 0
+      }
+    },
+    "paired_mean_difference": 88.985,
+    "paired_ci95": [
+      66.629375,
+      111.667
+    ],
+    "ratio": 2.186387574161723
+  },
+  "reference_parameters": {
+    "dense": 20486,
+    "nonzero": 815
+  },
+  "success": true
+}

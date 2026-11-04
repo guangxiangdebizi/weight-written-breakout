@@ -1,0 +1,218 @@
+{
+  "plan": {
+    "experiment": "weight-written-breakout-v1",
+    "frozen_before_first_game": true,
+    "environment": "kenjyoung/MinAtar",
+    "upstream_commit": "4241f24685622cfb52f843cab9bbcf385a53484a",
+    "task": "breakout",
+    "observation": "official 10x10x4 binary object channels, flattened without extra features",
+    "network": "400 -> 794 ReLU -> 3 linear logits; sparse handwritten weights",
+    "construction": "local ball/trail conjunctions; analytic side-wall reflection to row 8; paddle comparison",
+    "forbidden": [
+      "training",
+      "gradient updates",
+      "fitting to trajectories",
+      "test-result-driven weight changes",
+      "hidden environment state in policy"
+    ],
+    "policies": [
+      "anticipation",
+      "reactive",
+      "random",
+      "zero"
+    ],
+    "primary": {
+      "seeds": [
+        0,
+        999
+      ],
+      "episodes": 1000,
+      "sticky_action_prob": 0.1,
+      "max_steps": 10000
+    },
+    "stress": {
+      "seeds": [
+        10000,
+        10199
+      ],
+      "episodes": 200,
+      "sticky_action_prob": 0.25,
+      "max_steps": 10000
+    },
+    "metrics": [
+      "mean reward",
+      "median reward",
+      "bootstrap mean 95% CI",
+      "mean episode length",
+      "truncation count",
+      "paired reward difference"
+    ],
+    "bootstrap": {
+      "resamples": 2000,
+      "seed": 20261104
+    },
+    "display": "first primary seed, first 600 frames; never select best episode",
+    "interpretation": "task-specific constructed neural policy, not a trained visual encoder or general-purpose AI; no trained-PPO superiority claim"
+  },
+  "weights_before": {
+    "anticipation.npz": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+    "reactive.npz": "c0ebddc44a8f10e451c9a70b9ad1308dc6f3020944976eac2880684347c74baa"
+  },
+  "conditions": {
+    "primary": {
+      "anticipation": {
+        "episodes": 1000,
+        "mean": 16.539,
+        "median": 7.0,
+        "ci95": [
+          15.324774999999999,
+          17.79555
+        ],
+        "min": 1.0,
+        "max": 168.0,
+        "mean_steps": 207.096,
+        "truncated": 0
+      },
+      "reactive": {
+        "episodes": 1000,
+        "mean": 8.366,
+        "median": 6.0,
+        "ci95": [
+          7.81295,
+          8.946174999999998
+        ],
+        "min": 0.0,
+        "max": 62.0,
+        "mean_steps": 97.984,
+        "truncated": 0
+      },
+      "random": {
+        "episodes": 1000,
+        "mean": 0.37,
+        "median": 0.0,
+        "ci95": [
+          0.33,
+          0.411
+        ],
+        "min": 0.0,
+        "max": 5.0,
+        "mean_steps": 9.758,
+        "truncated": 0
+      },
+      "zero": {
+        "episodes": 1000,
+        "mean": 0.507,
+        "median": 1.0,
+        "ci95": [
+          0.475,
+          0.537
+        ],
+        "min": 0.0,
+        "max": 1.0,
+        "mean_steps": 11.07,
+        "truncated": 0
+      },
+      "paired_vs_reactive": {
+        "mean_difference": 8.173,
+        "ci95": [
+          7.158725,
+          9.240324999999999
+        ]
+      },
+      "paired_vs_random": {
+        "mean_difference": 16.169,
+        "ci95": [
+          14.957325,
+          17.436049999999998
+        ]
+      },
+      "paired_vs_zero": {
+        "mean_difference": 16.032,
+        "ci95": [
+          14.818950000000001,
+          17.296449999999997
+        ]
+      }
+    },
+    "stress": {
+      "anticipation": {
+        "episodes": 200,
+        "mean": 4.435,
+        "median": 3.0,
+        "ci95": [
+          3.585,
+          5.360374999999999
+        ],
+        "min": 0.0,
+        "max": 42.0,
+        "mean_steps": 56.11,
+        "truncated": 0
+      },
+      "reactive": {
+        "episodes": 200,
+        "mean": 2.285,
+        "median": 1.0,
+        "ci95": [
+          1.875,
+          2.7451249999999994
+        ],
+        "min": 0.0,
+        "max": 19.0,
+        "mean_steps": 29.96,
+        "truncated": 0
+      },
+      "random": {
+        "episodes": 200,
+        "mean": 0.265,
+        "median": 0.0,
+        "ci95": [
+          0.195,
+          0.335
+        ],
+        "min": 0.0,
+        "max": 2.0,
+        "mean_steps": 8.69,
+        "truncated": 0
+      },
+      "zero": {
+        "episodes": 200,
+        "mean": 0.53,
+        "median": 1.0,
+        "ci95": [
+          0.46,
+          0.6
+        ],
+        "min": 0.0,
+        "max": 1.0,
+        "mean_steps": 11.3,
+        "truncated": 0
+      },
+      "paired_vs_reactive": {
+        "mean_difference": 2.15,
+        "ci95": [
+          1.519875,
+          2.875374999999998
+        ]
+      },
+      "paired_vs_random": {
+        "mean_difference": 4.17,
+        "ci95": [
+          3.32,
+          5.100249999999998
+        ]
+      },
+      "paired_vs_zero": {
+        "mean_difference": 3.905,
+        "ci95": [
+          3.0747500000000003,
+          4.855125
+        ]
+      }
+    }
+  },
+  "weights_after": {
+    "anticipation.npz": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+    "reactive.npz": "c0ebddc44a8f10e451c9a70b9ad1308dc6f3020944976eac2880684347c74baa"
+  },
+  "numpy_version": "2.5.4"
+}

@@ -1,0 +1,111 @@
+{
+  "heldout": {
+    "new": {
+      "model": "extended_old.npz",
+      "sha256": "25fb4466d80d7a7ca8df437262549cf617d582a428efb4a84f1fbd18077213bc",
+      "split": "heldout",
+      "config": {
+        "first_seed": 30000,
+        "episodes": 1000,
+        "sticky": 0.1,
+        "cap": 10000
+      },
+      "mean": 255.997,
+      "median": 188.5,
+      "ci95": [
+        242.009625,
+        269.855325
+      ],
+      "min": 0,
+      "max": 834,
+      "mean_steps": 3115.796,
+      "truncated": 43
+    },
+    "original": {
+      "model": "anticipation.npz",
+      "sha256": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+      "split": "heldout",
+      "config": {
+        "first_seed": 30000,
+        "episodes": 1000,
+        "sticky": 0.1,
+        "cap": 10000
+      },
+      "mean": 17.959,
+      "median": 7.0,
+      "ci95": [
+        16.536825,
+        19.349
+      ],
+      "min": 1,
+      "max": 163,
+      "mean_steps": 225.68,
+      "truncated": 0
+    },
+    "ratio_of_means": 14.25452419399744,
+    "paired_difference": 238.038,
+    "difference_ci95": [
+      223.94195000000002,
+      252.02849999999995
+    ]
+  },
+  "stress": {
+    "new": {
+      "model": "extended_old.npz",
+      "sha256": "25fb4466d80d7a7ca8df437262549cf617d582a428efb4a84f1fbd18077213bc",
+      "split": "stress",
+      "config": {
+        "first_seed": 50000,
+        "episodes": 200,
+        "sticky": 0.25,
+        "cap": 10000
+      },
+      "mean": 29.005,
+      "median": 18.0,
+      "ci95": [
+        25.01,
+        33.37
+      ],
+      "min": 0,
+      "max": 240,
+      "mean_steps": 381.93,
+      "truncated": 0
+    },
+    "original": {
+      "model": "anticipation.npz",
+      "sha256": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+      "split": "stress",
+      "config": {
+        "first_seed": 50000,
+        "episodes": 200,
+        "sticky": 0.25,
+        "cap": 10000
+      },
+      "mean": 4.56,
+      "median": 3.0,
+      "ci95": [
+        3.87,
+        5.280125
+      ],
+      "min": 0,
+      "max": 35,
+      "mean_steps": 55.27,
+      "truncated": 0
+    },
+    "ratio_of_means": 6.360745614035088,
+    "paired_difference": 24.445,
+    "difference_ci95": [
+      20.459875,
+      28.8155
+    ]
+  },
+  "changed": {
+    "w1": 3786,
+    "b1": 439,
+    "w2": 1386,
+    "b2": 1,
+    "actions": 0
+  },
+  "upstream_commit": "4241f24685622cfb52f843cab9bbcf385a53484a",
+  "selected_sha256": "25fb4466d80d7a7ca8df437262549cf617d582a428efb4a84f1fbd18077213bc"
+}

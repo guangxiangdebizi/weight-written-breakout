@@ -1,0 +1,54 @@
+{
+  "development_candidates": [
+    {
+      "model": "center_old",
+      "mean": 27.1796875,
+      "sha256": "bba075bcd7a6aa2f2ed0c2647566189ced8ee0c7d227f4dbfd38c7c6cc2d705d",
+      "episodes": 128
+    },
+    {
+      "model": "center_interval",
+      "mean": 56.734375,
+      "sha256": "41d528f10e54ad2c59eca3b01540aa3d8eea70cf09ca59c03b1bce75293b9dcf",
+      "episodes": 128
+    },
+    {
+      "model": "brick_old",
+      "mean": 67.4921875,
+      "sha256": "047f95c791ab2c4b8643d024d0b647a425d1323752ac36ae6bca8b57af945c7e",
+      "episodes": 128
+    },
+    {
+      "model": "brick_interval",
+      "mean": 69.4140625,
+      "sha256": "732a4453ef6710bba90f473fe65cc7f97eadc95da448d8741d126d965997a8dd",
+      "episodes": 128
+    },
+    {
+      "model": "extended_old",
+      "mean": 276.390625,
+      "sha256": "25fb4466d80d7a7ca8df437262549cf617d582a428efb4a84f1fbd18077213bc",
+      "episodes": 128
+    },
+    {
+      "model": "extended_safe",
+      "mean": 254.46875,
+      "sha256": "67ad9a992c0de43ab7a1c9140582dbea80c7b28c682e080f129599a0ea19f770",
+      "episodes": 128
+    }
+  ],
+  "selected": {
+    "model": "extended_old",
+    "mean": 276.390625,
+    "sha256": "25fb4466d80d7a7ca8df437262549cf617d582a428efb4a84f1fbd18077213bc",
+    "episodes": 128
+  },
+  "heldout_seen_at_selection": false,
+  "training_steps": 0,
+  "design_uses_development_feedback": true,
+  "architecture": [
+    400,
+    794,
+    3
+  ]
+}

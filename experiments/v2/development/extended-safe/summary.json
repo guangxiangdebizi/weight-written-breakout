@@ -1,0 +1,21 @@
+{
+  "model": "extended_safe.npz",
+  "sha256": "67ad9a992c0de43ab7a1c9140582dbea80c7b28c682e080f129599a0ea19f770",
+  "split": "development",
+  "config": {
+    "first_seed": 2000,
+    "episodes": 128,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "mean": 254.46875,
+  "median": 197.5,
+  "ci95": [
+    218.8193359375,
+    292.5328125
+  ],
+  "min": 6,
+  "max": 782,
+  "mean_steps": 3360.296875,
+  "truncated": 8
+}

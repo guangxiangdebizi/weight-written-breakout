@@ -1,0 +1,22 @@
+{
+  "training_steps": 0,
+  "architecture": [
+    400,
+    794,
+    3
+  ],
+  "dtype": "float32",
+  "anticipation": {
+    "sha256": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+    "dense_parameter_slots": 320779,
+    "nonzero_parameters": 3813,
+    "nonzero_connections": 3028
+  },
+  "reactive": {
+    "sha256": "c0ebddc44a8f10e451c9a70b9ad1308dc6f3020944976eac2880684347c74baa",
+    "dense_parameter_slots": 320779,
+    "nonzero_parameters": 3837,
+    "nonzero_connections": 3052
+  },
+  "builder_sha256": "fb59545d6e8b4a119305bd38c528e3a487e861ae0408dc660906b9b60c00250b"
+}

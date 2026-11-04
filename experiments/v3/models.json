@@ -1,0 +1,50 @@
+{
+  "recurrent-0.01": {
+    "sizes": [
+      612,
+      1150,
+      400,
+      10092,
+      18
+    ],
+    "trajectory_features": 1112,
+    "forecast_classes": 360,
+    "context_classes": 28,
+    "nonzero_parameters": 48202,
+    "dense_parameter_slots": 5393916,
+    "sha256": "e8231ad5e66dacf8508113b0e9a17433ea097587c29c93b24a5896153af2d654",
+    "penalty": 0.01
+  },
+  "recurrent-0.05": {
+    "sizes": [
+      612,
+      1150,
+      400,
+      10092,
+      18
+    ],
+    "trajectory_features": 1112,
+    "forecast_classes": 360,
+    "context_classes": 28,
+    "nonzero_parameters": 48202,
+    "dense_parameter_slots": 5393916,
+    "sha256": "b260cf2b11d9cb273cb015a8ecd300cee9982168d37ab93ec8c18f857e8fc40f",
+    "penalty": 0.05
+  },
+  "recurrent-0.2": {
+    "sizes": [
+      612,
+      1150,
+      400,
+      10092,
+      18
+    ],
+    "trajectory_features": 1112,
+    "forecast_classes": 360,
+    "context_classes": 28,
+    "nonzero_parameters": 48202,
+    "dense_parameter_slots": 5393916,
+    "sha256": "52aeb1936f9b318a06a01702b0b90c219772d1ff22a292bd97b0de8459d78f35",
+    "penalty": 0.2
+  }
+}

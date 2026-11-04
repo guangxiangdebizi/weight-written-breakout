@@ -1,0 +1,20 @@
+Reference checkpoint attribution
+
+File: reference-hand.npz (unchanged)
+Authors: Rikiya Takehi, Jayden Teoh, Alex Zhang, Omar Khattab (MIT CSAIL)
+Work: Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights
+Published: 2026-11-02
+Source: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp5_write_from_scratch
+Original path: networks/breakout/hand.npz
+License: Creative Commons Attribution 4.0 International
+License URL: https://creativecommons.org/licenses/by/4.0/legalcode
+SHA256: 6e8d42658aed3704c7bf6fb67015e9468cc03f1d67cb8a4fd192e6534fcccb4a
+
+The reference checkpoint is included solely for reproducible comparison.
+It was not edited or used to initialize our networks. Our networks were built
+from game rules and analytic control calculations in build_weights.py.
+The authors do not endorse this comparison.
+
+Benchmark dependency: MinAtar 1.0.15, Kenny Young and Tian Tian.
+Source: https://github.com/kenjyoung/MinAtar
+License: GPL-3.0. The dependency itself is not bundled in this archive.

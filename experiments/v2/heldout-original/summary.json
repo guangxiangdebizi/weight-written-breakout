@@ -1,0 +1,21 @@
+{
+  "model": "anticipation.npz",
+  "sha256": "6c12332affc441edfe3e6baf88f37be7ccb046ff3cba43ce0ab62516d7adf062",
+  "split": "heldout",
+  "config": {
+    "first_seed": 30000,
+    "episodes": 1000,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "mean": 17.959,
+  "median": 7.0,
+  "ci95": [
+    16.536825,
+    19.349
+  ],
+  "min": 1,
+  "max": 163,
+  "mean_steps": 225.68,
+  "truncated": 0
+}

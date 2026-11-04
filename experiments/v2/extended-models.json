@@ -1,0 +1,12 @@
+{
+  "extended_old": {
+    "sha256": "25fb4466d80d7a7ca8df437262549cf617d582a428efb4a84f1fbd18077213bc",
+    "active_hidden_units": 655,
+    "nonzero_parameters": 4076
+  },
+  "extended_safe": {
+    "sha256": "67ad9a992c0de43ab7a1c9140582dbea80c7b28c682e080f129599a0ea19f770",
+    "active_hidden_units": 655,
+    "nonzero_parameters": 4078
+  }
+}

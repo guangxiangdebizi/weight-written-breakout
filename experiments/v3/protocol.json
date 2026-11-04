@@ -1,0 +1,43 @@
+{
+  "experiment": "weight-written-breakout-v3-recurrent",
+  "environment": "MinAtar 1.0.15",
+  "reference_revision": "4d09ba6d6a7e891dd8063974dfe81b3d78e3494f",
+  "reference_reported_mean": 517.411,
+  "reference_reported_se": 7.416952829044303,
+  "reproduction_acceptance": "absolute mean difference <= 3 * sqrt(reported_se^2 + reproduced_se^2); same published input mapping, checkpoint, softmax sampling, sticky probability and episode cap",
+  "reproduction": {
+    "first_seed": 100000,
+    "episodes": 1000,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "development": {
+    "first_seed": 2000,
+    "episodes": 128,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "heldout": {
+    "first_seed": 200000,
+    "episodes": 1000,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "stress": {
+    "first_seed": 300000,
+    "episodes": 200,
+    "sticky": 0.25,
+    "cap": 10000
+  },
+  "candidate_terminal_penalties": [
+    0.01,
+    0.05,
+    0.2
+  ],
+  "selection": "highest development mean among three analytically constructed candidates; tie by lower penalty",
+  "primary_claim": "selected model exceeds both 517.411 and the reproduced released reference checkpoint on the matched heldout game protocol; paired bootstrap mean-difference CI must exclude zero",
+  "construction": "one-hot geometric trajectory features, previous observed paddle and vertical-direction recurrence, exact finite-horizon stochastic control dynamic programming compiled into fixed ReLU weights",
+  "no_training": "no gradients, no sampled data fitting, no reward optimization of weights; candidate selection uses development feedback",
+  "fairness_limits": "architecture, parameter count, recurrence and development-feedback budget differ from the original one-shot 600-32-32-6 tanh experiment",
+  "heldout_rule": "freeze selection and weights before heldout; do not reuse heldout outcomes for further edits"
+}

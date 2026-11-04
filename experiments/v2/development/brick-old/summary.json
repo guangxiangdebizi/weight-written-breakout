@@ -1,0 +1,21 @@
+{
+  "model": "brick_old.npz",
+  "sha256": "047f95c791ab2c4b8643d024d0b647a425d1323752ac36ae6bca8b57af945c7e",
+  "split": "development",
+  "config": {
+    "first_seed": 2000,
+    "episodes": 128,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "mean": 67.4921875,
+  "median": 46.0,
+  "ci95": [
+    56.0310546875,
+    78.58789062499999
+  ],
+  "min": 3,
+  "max": 356,
+  "mean_steps": 818.5625,
+  "truncated": 0
+}

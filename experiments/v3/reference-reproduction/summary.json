@@ -1,0 +1,22 @@
+{
+  "kind": "reference",
+  "model": "hand.npz",
+  "sha256": "6e8d42658aed3704c7bf6fb67015e9468cc03f1d67cb8a4fd192e6534fcccb4a",
+  "config": {
+    "first_seed": 100000,
+    "episodes": 1000,
+    "sticky": 0.1,
+    "cap": 10000
+  },
+  "mean": 508.268,
+  "se": 7.686660974241868,
+  "ci95": [
+    493.67815,
+    523.509525
+  ],
+  "median": 647.0,
+  "min": 3,
+  "max": 795,
+  "mean_steps": 7238.368,
+  "truncated": 508
+}

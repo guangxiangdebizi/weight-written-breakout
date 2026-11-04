@@ -1,0 +1,19 @@
+{
+  "architecture": [
+    400,
+    794,
+    3
+  ],
+  "models": {
+    "brick_old": {
+      "active_hidden_units": 603,
+      "sha256": "047f95c791ab2c4b8643d024d0b647a425d1323752ac36ae6bca8b57af945c7e",
+      "nonzero_parameters": 4127
+    },
+    "brick_interval": {
+      "active_hidden_units": 603,
+      "sha256": "732a4453ef6710bba90f473fe65cc7f97eadc95da448d8741d126d965997a8dd",
+      "nonzero_parameters": 4185
+    }
+  }
+}
